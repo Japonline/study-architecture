@@ -1,0 +1,46 @@
+2020-03-26 05:49:19,309 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-03-26 05:49:19,315 INFO supervisord started with pid 1
+2020-03-26 05:49:20,321 INFO spawned: 'laravel-worker_00' with pid 8
+2020-03-26 05:49:20,325 INFO spawned: 'laravel-worker_01' with pid 9
+2020-03-26 05:49:20,328 INFO spawned: 'laravel-worker_02' with pid 10
+2020-03-26 05:49:20,333 INFO spawned: 'laravel-worker_03' with pid 11
+2020-03-26 05:49:20,342 INFO spawned: 'laravel-worker_04' with pid 12
+2020-03-26 05:49:20,350 INFO spawned: 'laravel-worker_05' with pid 13
+2020-03-26 05:49:20,357 INFO spawned: 'laravel-worker_06' with pid 14
+2020-03-26 05:49:20,369 INFO spawned: 'laravel-worker_07' with pid 15
+2020-03-26 05:49:21,372 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,373 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,374 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,375 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,376 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,378 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,379 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 05:49:21,380 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:35,204 WARN received SIGQUIT indicating exit request
+2020-03-26 07:09:35,207 INFO waiting for laravel-worker_00, laravel-worker_01, laravel-worker_02, laravel-worker_03, laravel-worker_04, laravel-worker_05, laravel-worker_06, laravel-worker_07 to die
+2020-03-26 07:09:35,215 INFO stopped: laravel-worker_01 (terminated by SIGTERM)
+2020-03-26 07:09:35,216 INFO stopped: laravel-worker_00 (terminated by SIGTERM)
+2020-03-26 07:09:35,217 INFO stopped: laravel-worker_02 (terminated by SIGTERM)
+2020-03-26 07:09:35,218 INFO stopped: laravel-worker_04 (terminated by SIGTERM)
+2020-03-26 07:09:35,219 INFO stopped: laravel-worker_05 (terminated by SIGTERM)
+2020-03-26 07:09:35,220 INFO stopped: laravel-worker_06 (terminated by SIGTERM)
+2020-03-26 07:09:35,221 INFO stopped: laravel-worker_03 (terminated by SIGTERM)
+2020-03-26 07:09:35,221 INFO stopped: laravel-worker_07 (terminated by SIGTERM)
+2020-03-26 07:09:41,397 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-03-26 07:09:41,400 INFO supervisord started with pid 1
+2020-03-26 07:09:42,376 INFO spawned: 'laravel-worker_00' with pid 7
+2020-03-26 07:09:42,382 INFO spawned: 'laravel-worker_01' with pid 8
+2020-03-26 07:09:42,390 INFO spawned: 'laravel-worker_02' with pid 9
+2020-03-26 07:09:42,396 INFO spawned: 'laravel-worker_03' with pid 10
+2020-03-26 07:09:42,403 INFO spawned: 'laravel-worker_04' with pid 11
+2020-03-26 07:09:42,408 INFO spawned: 'laravel-worker_05' with pid 12
+2020-03-26 07:09:42,415 INFO spawned: 'laravel-worker_06' with pid 13
+2020-03-26 07:09:42,421 INFO spawned: 'laravel-worker_07' with pid 14
+2020-03-26 07:09:43,425 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,427 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,428 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,430 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,431 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,431 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,433 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-03-26 07:09:43,434 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

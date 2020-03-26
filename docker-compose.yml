@@ -1,0 +1,76 @@
+version: '3'
+
+volumes:
+  mysql:
+    driver: local
+
+services:
+### NGINX Server #########################################
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    container_name: architecture-nginx
+    volumes:
+      - ./laravel:/var/www
+    ports:
+      - "12100:80"
+    depends_on:
+      - php-fpm
+    networks:
+      - bridge
+
+### PHP-FPM ################################################
+  php-fpm:
+    build:
+      context: .
+      dockerfile: ./docker/php-fpm/Dockerfile
+    container_name: architecture-php-fpm
+    volumes:
+      - ./laravel:/var/www
+    depends_on:
+      - mysql
+    networks:
+      - bridge
+
+### PHP-FPM(supervisor) ################################################
+  supervisor:
+    build:
+      context: .
+      dockerfile: ./docker/supervisor/Dockerfile
+    container_name: architecture-supervisor
+    volumes:
+      - ./laravel:/var/www
+      - ./docker/supervisor/laravel-worker.conf:/etc/supervisor/conf.d/laravel-worker.conf
+    depends_on:
+      - php-fpm
+      - mysql
+    networks:
+      - bridge
+
+### MySQL ################################################
+  mysql:
+    build:
+      context: .
+      dockerfile: ./docker/mysql/Dockerfile
+      # args:
+      #   MYSQL_VERSION: "5.7"
+    container_name: architecture-mysql
+    environment:
+      MYSQL_DATABASE: "architecture"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+      TZ: "UTC"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - "3388:3306"
+    networks:
+      - bridge
+
+### Networks ################################################
+networks:
+  bridge:
+    driver: bridge
